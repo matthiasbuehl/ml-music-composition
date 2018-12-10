@@ -11,6 +11,17 @@ Create original music via machine learning
 ### Domain Background
 Music has been composed since the dawn of time.  Music composition requires creativity and is deemed to be a uniquely  human capability.  At its core, music is rhythm and pitch.  Music composition is the creation of a sequence of pitches over time.  It will be interesting to explore how machine learning can be used to mimic a human composer.
 
+Existing research in composition via machine learning:
+https://cs224d.stanford.edu/reports/allenh.pdf  
+https://magenta.tensorflow.org/  
+https://github.com/burliEnterprises/tensorflow-music-generator  
+https://github.com/Skuldur/Classical-Piano-Composer  
+https://towardsdatascience.com/deep-learning-with-tensorflow-part-3-music-and-text-generation-8a3fbfdc5e9b  
+https://medium.com/artists-and-machine-intelligence/neural-nets-for-generating-music-f46dffac21c0  
+http://www.hexahedria.com/2015/08/03/composing-music-with-recurrent-neural-networks/  
+https://towardsdatascience.com/making-music-when-simple-probabilities-outperform-deep-learning-75f4ee1b8e69  
+
+
 ### Problem Statement
 As stated above, composing music is exclusively a human activity.  Composers are highly trained individuals and the craft takes decades to master.  Nevertheless, composers tend to be strongly inspired by past works.  This fact suggest the possibility that an algorithm could learn from existing works and could create an original piece.
 
@@ -18,12 +29,21 @@ As stated above, composing music is exclusively a human activity.  Composers are
 ### Datasets and Inputs
 I believe that the most appropriate input data will be midi files.  Midi files contain information about notes and not the notes themselves. Midi notes contain information about pitch, velocity, note-on, note-off, etc.   Since these parameters are numerical, they can be easily fed to a machine learning algorithm.
 
-There are lots of public repositories of midi files e.g.
+There are lots of public repositories of midi files e.g.  
 https://newzik.com/project/online-public-domain-libraries-musicxml-midi-scores/
+
+http://www.kunstderfuge.com/  
+close to 20,000 midi files
+
+http://www.mutopiaproject.org/  
+about 2000 midi files
+
+https://www.classicalarchives.com/midi.html  
+about 2,400 midi files
 
 
 ### Solution Statement
-A music composition consists of a sequence of pitches.  In order for a note to sound pleasing, it needs to work within the context provided by the notes that precede it.  I plan on using a recurrent neural network to predict the next note from a sequence of notes.  The newly predicted note will be part of the sequence that gets run through the network next.  This process continues indefinitly in order to produce a continuous stream of notes.
+A music composition consists of a sequence of pitches.  In order for a note to sound pleasing, it needs to work within the context provided by the notes that precede it.  I plan on using a recurrent neural network to predict the next note from a sequence of notes.  In order to avoid the vanishing and expliding gradient problems, a long short-term memory network may be a good candidate.  The newly predicted note will be part of the sequence that gets run through the network next.  This process continues indefinitly in order to produce a continuous stream of notes.
 
 
 ### Benchmark Model
