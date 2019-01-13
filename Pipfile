@@ -13,6 +13,8 @@ matplotlib = "*"
 tensorflow = "*"
 sklearn = "*"
 pyyaml = "==4.2b1"
+music21 = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.6"

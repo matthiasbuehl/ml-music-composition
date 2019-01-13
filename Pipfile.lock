@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cacbc6876c9931c895469589569f4f4b3f1b09ed64be596411a419a1a750bb08"
+            "sha256": "b8f6bf57d99466522141117bd6b5c1d0472e97c70508af6ecc6e5198700d33c4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -356,6 +356,13 @@
             ],
             "version": "==0.8.4"
         },
+        "music21": {
+            "hashes": [
+                "sha256:10140b3b4e48671cfef98e5bbbb415770f6434c6caf9dbd29f00f40aec8402fe"
+            ],
+            "index": "pypi",
+            "version": "==5.5.0"
+        },
         "nbconvert": {
             "hashes": [
                 "sha256:08d21cf4203fabafd0d09bbd63f06131b411db8ebeede34b0fd4be4548351779",
@@ -578,6 +585,7 @@
                 "sha256:ed537844348402ed53420187b3a6948c576986d0b2811a987a49613b6a26f29e",
                 "sha256:fcca54733e692fe03b8584f7d4b9344f4b6e3a74f5b326c6e5f5e9d2504bdce7"
             ],
+            "index": "pypi",
             "version": "==0.20.2"
         },
         "scipy": {
