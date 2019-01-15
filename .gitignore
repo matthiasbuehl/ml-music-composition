@@ -1,2 +1,4 @@
 samples/
 weights*
+*.h5
+.DS_Store
